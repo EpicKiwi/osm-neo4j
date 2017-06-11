@@ -1,0 +1,20 @@
+{
+  "name": "osm-neo4j",
+  "version": "1.0.0",
+  "description": "Un parseur de fichiers OSM sur une base de données Neo4J",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "docker run -it --rm -p 7474:7474 -p 7687:7687 neo4j"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicKiwi/osm-neo4j.git"
+  },
+  "author": "EpicKiwi <me@epickiwi.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EpicKiwi/osm-neo4j/issues"
+  },
+  "homepage": "https://github.com/EpicKiwi/osm-neo4j#readme"
+}
