@@ -2,12 +2,11 @@
   "name": "osm-neo4j",
   "version": "1.0.0",
   "description": "Un parseur de fichiers OSM sur une base de données Neo4J",
-  "main": "build/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docker": "docker run -it --rm -p 7474:7474 -p 7687:7687 neo4j",
-    "build": "gulp",
-    "watch": "gulp watch"
+    "dev": "nodemon ./src/index.js ./test-files/saint-cyr-centre.osm"
   },
   "repository": {
     "type": "git",
@@ -25,8 +24,7 @@
     "typescript": "^2.4.2"
   },
   "dependencies": {
-    "@types/node": "^8.0.15",
-    "@types/xml2js": "^0.4.0",
+    "neo4j-driver": "^1.4.0",
     "xml2js": "^0.4.17"
   }
 }
